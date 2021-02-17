@@ -1,9 +1,9 @@
 #!/bin/bash
 cd openwrt
 cat >> .config <<EOF
-CONFIG_TARGET_armvirt=y
-CONFIG_TARGET_armvirt_64=y
-CONFIG_TARGET_armvirt_64_Default=y
+CONFIG_TARGET_x86=y
+CONFIG_TARGET_x86_64=y
+CONFIG_TARGET_x86_64_Generic=y
 CONFIG_KERNEL_KEXEC=y
 CONFIG_OPENSSL_PREFER_CHACHA_OVER_GCM=y
 # CONFIG_TARGET_ROOTFS_CPIOGZ is not set
@@ -177,7 +177,6 @@ CONFIG_PACKAGE_ruby-psych=y
 CONFIG_PACKAGE_ruby-stringio=y
 CONFIG_PACKAGE_ruby-strscan=y
 CONFIG_PACKAGE_ruby-yaml=y
-CONFIG_PACKAGE_luci-theme-opentomcat=y
 # CONFIG_PACKAGE_adbyby is not set
 # CONFIG_PACKAGE_ip-full is not set
 # CONFIG_PACKAGE_iptables-mod-ipsec is not set
@@ -195,7 +194,7 @@ CONFIG_PACKAGE_luci-theme-opentomcat=y
 # CONFIG_PACKAGE_libgmp is not set
 # CONFIG_PACKAGE_libminiupnpc is not set
 # CONFIG_PACKAGE_libnatpmp is not set
-# CONFIG_PACKAGE_luci-app-accesscontrol is not set
+# CONFIG_PACKAGE_-app-accesscontrol is not set
 # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
 # CONFIG_PACKAGE_luci-app-arpbind is not set
 # CONFIG_PACKAGE_luci-app-ddns is not set
